@@ -1,8 +1,12 @@
 import java.time.LocalDate;
 
-public class FlyingAnimal extends Animal {
+public class FlyingAnimal extends Animal implements Flyable{
     public FlyingAnimal(String name, Illness illness, String ownerName, LocalDate birthday) {
         super(name, illness, ownerName, birthday);
+    }
+    @Override
+    public double getSpeed() {
+        return 20.0;
     }
 
     @Override

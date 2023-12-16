@@ -1,7 +1,7 @@
 import java.time.LocalDate;
 
 public abstract class Animal {
-    
+
     protected String name;
     private Illness illness;
     private String ownerName;
@@ -52,7 +52,9 @@ public abstract class Animal {
         move();
         sleep();
     }
+
     public abstract void toGo();
+
     protected void move() {
         System.out.println(name + " is moving");
     }

@@ -1,6 +1,6 @@
 import java.time.LocalDate;
 
-public class Duck extends Animal {
+public class Duck extends Animal implements Flyable, Swimable, Goable{
     public Duck(String name, Illness illness, String ownerName, LocalDate birthday) {
         super(name, illness, ownerName, birthday);
     }
@@ -23,4 +23,10 @@ public class Duck extends Animal {
     public void swim() {
         System.out.println(getName() + " is swimming");
     }
+
+    @Override
+    public double getSpeed() {
+        return 12.0;
+    }
+
 }

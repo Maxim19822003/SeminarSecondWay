@@ -1,6 +1,6 @@
 import java.time.LocalDate;
 
-public class Dog extends Animal {
+public class Dog extends Animal implements Goable, Swimable{
     public Dog() {
         super();
     }
@@ -12,5 +12,10 @@ public class Dog extends Animal {
     @Override
     public void toGo() {
         move();
+    }
+
+    @Override
+    public double getSpeed() {
+        return 8.0;
     }
 }

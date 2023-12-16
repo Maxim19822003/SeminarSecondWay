@@ -1,8 +1,12 @@
 import java.time.LocalDate;
 
-public class SwimmingAnimal extends Animal {
+public class SwimmingAnimal extends Animal implements Swimable{
     public SwimmingAnimal(String name, Illness illness, String ownerName, LocalDate birthday) {
         super(name, illness, ownerName, birthday);
+    }
+    @Override
+    public double getSpeed() {
+        return 5.0;
     }
 
     @Override
